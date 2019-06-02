@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1 Rules
+
+        li King can move:
+            ul One square vertically, horizontally or diagonally.
+        li Queen can move:
+            ul Any number of squares vertically, horizontally and diagonally.
+        li Rook can move:
+            ul Any number of squares vertically and horizontally.
+        li Bishop can move:
+            ul Any number of squares diagonally.
+        li Knight can move:
+            ul one square along any brick, the movement can be viewed as an upside down L.
+        li Pawns can move:
+            ul two squares as the first move if the square is not occupied. Otherwise pawns can only move one square vertically forward (pawn cannot move backwards).
+            ul Pawns can also attack a brick diagonally in front of them. The pawn is also involved in the passant and promotion.
+
+        li Other rules:
+            ul A king can make a special move called castling:
+            ul 1) there is no pieces between the king and the rook.
+            ul 2) the King or the rook have not moved from the original position.
+            br
+            ul Passant happens when a pawn moves one square diagonally, when the opponent's pawn has occupied the square forwards and vertically behind that pawn again.
+            br
+            ul If the pawn reaches the last square on the opponent's side, it will get a promotion.
+            ul The options is to be promoted to a queen, bishop, rook or knight (in our game pawn will be automatically promoted to queen, but this will possibly be changed in the future).

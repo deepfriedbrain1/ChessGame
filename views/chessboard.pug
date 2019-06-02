@@ -1,0 +1,135 @@
+extends layout
+
+block content
+
+    div.chesscontainer
+        // row 1 (top to bottom)
+
+        div.square.black( class='divs' id='A8' style="background-image: url('')")
+        div.square.white( class='divs' id='B8' style="background-image: url('')")
+        div.square.black( class='divs' id="C8" style="background-image: url('')")
+        div.square.white( id="D8" class='divs' style="background-image: url('')")
+        div.square.black( id='E8' class='divs' style="background-image: url('')")
+        div.square.white( id='F8' class='divs' style="background-image: url('')")
+        div.square.black( id='G8' class='divs' style="background-image: url('')")
+        div.square.white( id='H8' class='divs' style="background-image: url('')")
+        div.chessboard-text 8
+
+        // row 2 - change
+        div.square.white( id='A7' class='divs' style="background-image: url('')")
+        div.square.black( id='B7' class='divs' style="background-image: url('')")
+        div.square.white( id='C7' class='divs' style="background-image: url('')")
+        div.square.black( id='D7' class='divs' style="background-image: url('')")
+        div.square.white( id='E7' class='divs' style="background-image: url('')")
+        div.square.black( id='F7' class='divs' style="background-image: url('')")
+        div.square.white( id='G7' class='divs' style="background-image: url('')")
+        div.square.black( id='H7' class='divs' style="background-image: url('')")
+        div.chessboard-text 7
+
+        // row 3 - change
+        div.square.black( id='A6' class='divs' )
+            img( src='')
+        div.square.white( id='B6' class='divs')
+            img( src='')
+        div.square.black( id='C6' class='divs')
+            img( src='')
+        div.square.white( id='D6' class='divs')
+            img( src='')
+        div.square.black( id='E6' class='divs')
+            img( src='')
+        div.square.white( id='F6' class='divs')
+            img( src='')
+        div.square.black( id='G6' class='divs')
+            img( src='')
+        div.square.white( id='H6' class='divs')
+            img( src='')
+        div.chessboard-text 6
+
+        // row 4 - change
+        div.square.white( id='A5' class='divs')
+            img( src='')
+        div.square.black( id='B5' class='divs')
+            img( src='')
+        div.square.white( id='C5' class='divs')
+            img( src='')
+        div.square.black( id='D5' class='divs')
+            img( src='')
+        div.square.white( id='E5' class='divs')
+            img( src='')
+        div.square.black( id='F5' class='divs')
+            img(  src='')
+        div.square.white( id='G5' class='divs')
+            img( src='')
+        div.square.black( id='H5' class='divs')
+            img( src='')
+        div.chessboard-text 5
+
+        // row 5 - change
+        div.square.black( id='A4' class='divs')
+            img( src='' onclick="function()")
+        div.square.white( id='B4' class='divs')
+            img( src='')
+        div.square.black( id='C4' class='divs')
+            img( src='')
+        div.square.white( id='D4' class='divs')
+            img( src='')
+        div.square.black( id='E4' class='divs')
+            img( src='')
+        div.square.white( id='F4' class='divs')
+            img( src='')
+        div.square.black( id='G4' class='divs')
+            img( src='')
+        div.square.white( id='H4' class='divs')
+            img( src='')
+        div.chessboard-text 4
+
+        // row 6 - change
+        div.square.white( id='A3' class='divs')
+            img( src='')
+        div.square.black( id='B3' class='divs')
+            img( src='')
+        div.square.white( id='C3' class='divs')
+            img( src='')
+        div.square.black( id='D3' class='divs')
+            img( src='')
+        div.square.white( id='E3' class='divs')
+            img( src='')
+        div.square.black( id='F3' class='divs')
+            img( src='')
+        div.square.white( id='G3' class='divs')
+            img( src='')
+        div.square.black( id='H3' class='divs')
+            img( src='')
+        div.chessboard-text 3
+
+        // row 7 - change
+        div.square.black( id='A2' class='divs' style="background-image: url('');" )
+        div.square.white( id='B2' class='divs' style="background-image: url('');")
+        div.square.black( id='C2' class='divs' style="background-image: url('');")
+        div.square.white( id='D2' class='divs' style="background-image: url('');")
+        div.square.black( id='E2' class='divs' style="background-image: url('');")
+        div.square.white( id='F2' class='divs' style="background-image: url('');")
+        div.square.black( id='G2' class='divs' style="background-image: url('');")
+        div.square.white( id='H2' class='divs' style="background-image: url('');")
+        div.chessboard-text 2
+        // row 8 - change
+        div.square.white( id='A1' class='divs' style="background-image: url('');")
+        div.square.black( id='B1' class='divs' style="background-image: url('');")
+        div.square.white( id='C1' class='divs' style="background-image: url('');")
+        div.square.black( id='D1' class='divs' style="background-image: url('');")
+        div.square.white( id='E1' class='divs' style="background-image: url('')")
+        div.square.black( id='F1' class='divs' style="background-image: url('');")
+        div.square.white( id='G1' class='divs' style="background-image: url('');")
+        div.square.black( id='H1' class='divs' style="background-image: url('');")
+
+        div.chessboard-text 1
+
+        div.chessboard-bottom-text A
+        div.chessboard-bottom-text B
+        div.chessboard-bottom-text C
+        div.chessboard-bottom-text D
+        div.chessboard-bottom-text E
+        div.chessboard-bottom-text F
+        div.chessboard-bottom-text G
+        div.chessboard-bottom-text H
+

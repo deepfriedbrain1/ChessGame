@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    div.container-fluid( id='mainvieww')
+        div.row.align-items-top( id='mainroww' )
+            div.col-2
+                include menu.pug
+            div.col-8.maxheight
+                include chessboard.pug
+            div.col-2
+                include chat.pug

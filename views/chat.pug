@@ -1,0 +1,26 @@
+mixin chatMessage(user, message)
+    div
+        b #{user}:
+        | #{message}
+
+block content
+    - const username = "Albert";
+    - const username2 = "Larry";
+
+
+    div.chatContainer(align= 'center')
+        .chatTitleContainer
+            img( src='/images/chat.png' width="50vw" height="50vw")
+            .chattitle(align ='center') CHAT
+
+        .chatWindow
+            ul.chatmessages(id="chatMessages")
+
+
+
+        form#chatinput
+            input.msgfield#m(type='message', placeholder='Write a message')
+            br
+            center
+            input.sendbtn#chatsubmit(type='')
+

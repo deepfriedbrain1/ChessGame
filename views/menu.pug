@@ -1,0 +1,39 @@
+mixin currentGames(id, action)
+    button.btn.btn-success.btn-sm.btn-block( id=id onclick=action) Game #{id}
+
+mixin viewGames(id, action)
+    button.btn.btn-warning.btn-sm.btn-block( id=id onclick=action) Game #{id}
+
+block content
+    div( align='center' )
+        a(href='/')
+            img( src='/images/chesslogo.jpg' width="150vw" height="100vw")
+        p.sideMenuTitle CHESS
+    br
+    div
+        a(class='btn btn-outline-success btn-sm btn-block', href='/api/createGame') Create Game
+    br
+    div
+        p.font-weight-bold( align='center') Join Games
+
+    br
+    div.currentGamesBox( id = 'current-games' )
+
+    br
+    div
+        p.font-weight-bold( align='center')  Your Games
+    br
+    div.viewGamesBox( id='view-games')
+  
+    br
+    div
+        button.btn.btn-secondary.btn-sm.btn-block(id="scoreboardButton" onclick="window.open('/scoreboard','_top')") Scoreboard
+    br
+    div( id='quitGame')
+
+    br
+    div
+        button.btn.btn-outline-dark.btn-sm.btn-block(id="rulesButton" onclick="window.open('/rules','_top')") Rules
+    br
+    div
+        button.btn.btn-outline-danger.btn-sm.btn-block(id="signOutButton" onclick="window.open('/logout', '_top')") Sign Out

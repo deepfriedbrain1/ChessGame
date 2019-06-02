@@ -1,0 +1,208 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.chesscontainer {
+  width: 70vw;
+  height: 50vw;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.maxheight {
+  max-height: 20px;
+}
+
+.cell {
+  padding: 0;
+  margin: 0;
+}
+
+.black {
+  background-color: darkslategrey;
+}
+
+.white {
+  background-color: antiquewhite;
+}
+
+.square {
+  min-height: 8vw;
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+
+.square.img {
+  width: 80%;
+  height: 80%;
+}
+.square:hover {
+  border-style: solid;
+  border-color: yellow;
+}
+
+.chessboard-text {
+  min-height: 3vh;
+  width: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chessboard-bottom-text {
+  min-height: 3vh;
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-square {
+  border: 0.1em solid #A9A9A9;
+  background-color: yellow;
+}
+
+.square:hover {
+  border-color: yellow;
+  border-style: solid;
+
+}
+
+
+.highlight-border {
+  border-style: solid;
+  border-color: yellow;
+}
+
+.chatTitleContainer {
+  width: 98%;
+  height: 98%;
+  border: 0.1em solid #A9A9A9;
+  padding: 1%;
+  margin-bottom: 1em;
+  background-color: whitesmoke;
+}
+.chatWindow {
+  background-color: white;
+  width: 100%;
+  height: 70vh;
+  border: 0.1em solid #A9A9A9;
+  padding: 1%;
+  overflow-y : scroll;
+}
+
+.currentGamesBox{
+  background-color: white;
+  width: 100%;
+  height: 29vh;
+  border: 0.1em solid #A9A9A9;
+  padding: 1%;
+  overflow-y : scroll;
+}
+
+.viewGamesBox{
+  background-color: white;
+  width: 100%;
+  height: 29vh;
+  border: 0.1em solid #A9A9A9;
+  padding: 1%;
+  overflow-y : scroll;
+}
+.msgfield {
+  width: 100%;
+  height: 2em;
+  font-size: 1vw;
+  margin-bottom: 1em;
+}
+.sendbtn {
+  width: 10vh;
+  font-size: 1vw;
+  color: green;
+}
+
+table {
+  font-family: sans-serif, arial;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.chattitle {
+  color: darkslategray;
+  font-size:1.2vw;
+}
+
+.chatContainer {
+  background: darkslategrey;
+  padding:4px;
+}
+
+td, th {
+  font-size: 2vw;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #87CEEB;
+}
+
+.chatmessages {
+  text-align: left;
+  text-align: -moz-left;
+  text-align: -webkit-left;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+
+.has-text-centered {
+  text-aligned: center !important;
+}
+
+.hero.is-success {
+  background-color: darkcyan;
+  color: antiquewhite;
+}
+
+.button.is-success {
+  background-color: darkcyan;
+  color: white;
+
+}
+
+div.square.black{
+  background-size: 8vw 8vw;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+div.square.white{
+  background-size: 8vw 8vw;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.square.black {
+  background-size: 100% 100%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+

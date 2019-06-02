@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    div
+        div.card
+            div.card-header.bg-primary
+                h2.card-title.text-light Register
+            div.card-body
+
+                h5 Please fill in this form to create an account.
+
+                form( method='POST' action='/registration')
+                    div.form-group
+                        label.font-weight-bold( for='emailInput') Email
+                        input.form-control(name='username' id='emailInput' type='text' aria-describedby='emailHelp' placeholder='Enter username')
+                    div.form-group
+                        label.font-weight-bold(for='passwordInput') Password
+                        input.form-control(name='password' id='passwordInput' type='password' placeholder='Password')
+                    div.form-group
+                        label.font-weight-bold( for='repeatPasswordInput') Repeat Password
+                        input.form-control(id='repeatPasswordInput' type='password' placeholder='Repeat Password')
+
+                    button.btn.btn-primary.btn-lg.btn-block( type='submit') Register
+
+                br
+                p( align='center')
+                    | Already have an account?
+                    a( href='/login')  Sign In

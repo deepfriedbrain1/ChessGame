@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    div( align='center')
+        div.shadow-lg.p-3.m-b5.bg-white.rounded.card( align='center' style = 'width: 20rem;')
+            img.card-img-top( src='/images/chesslogo.jpg' alt='Card image')
+            div.card-body( )
+                h1.card-title( align='center') Sign In
+                form( method='POST' action='/login')
+                    div.form-group
+                        //label( for='inputEmail') Username/Email:
+                        input.form-control( name='username' type='text' id='username' aria-describedby='emailHelp' placeholder='Enter email')
+                        small.form-text.text-muted( id='emailHelp') We'll never share your email with anyone else.
+
+                    div.form-group
+                        input.form-control(name='password' type='password' id='userpassword' placeholder='Password')
+
+                    a( href='#') Forgot Password?
+                    p
+                    button.btn.btn-primary( type='submit') Sign In
+                    p
+                    a( href='/registration' ) New? Register for free!
+                    p
+                    p &copy 2018-2019

@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    input#game-id(type="hidden", value=id)
+    link(rel='stylesheet', href='/bootstrap/bootstrap.css')
+    //link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script (src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+    script (src="http://code.jquery.com/jquery-latest.min.js" )
+    script (src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+    script (src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+    script (src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js");
+
+  body
+    block content
+
+    block scripts
+      script(src="/js/bundle.js")
+      script(src="/bundle.js")
+      script(src="/loadgameBundle.js")
+      
+      script(src="/game.js" type="module")
+      
+      script(src= "https://code.jquery.com/jquery-1.11.1.js")
+

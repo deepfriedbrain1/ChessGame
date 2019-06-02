@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1(align ='center') Scoreboard
+    table(style='width:100%' align = 'center')
+        tbody#scoreboard(align = 'center')
+            tr(align = 'center')
+                th Player
+                th Win / Loss
+
+block scripts
+      script(src="scoreboard.js", type="module")
