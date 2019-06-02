@@ -1,0 +1,111 @@
+2018-10-14 19:27:12.798 PDT [16612] FATAL:  lock file "postmaster.pid" already exists
+2018-10-14 19:27:12.798 PDT [16612] HINT:  Is another postmaster (PID 10074) running in data directory "/usr/local/var/postgres"?
+2018-10-21 13:15:36.550 PDT [98353] LOG:  listening on IPv6 address "::1", port 5432
+2018-10-21 13:15:36.550 PDT [98353] LOG:  listening on IPv6 address "fe80::1%lo0", port 5432
+2018-10-21 13:15:36.550 PDT [98353] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-10-21 13:15:36.551 PDT [98353] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-10-21 13:15:36.576 PDT [98354] LOG:  database system was interrupted; last known up at 2018-10-16 15:52:10 PDT
+2018-10-21 13:15:36.681 PDT [98354] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-10-21 13:15:36.685 PDT [98354] LOG:  redo starts at 0/1699338
+2018-10-21 13:15:36.685 PDT [98354] LOG:  invalid record length at 0/1699418: wanted 24, got 0
+2018-10-21 13:15:36.685 PDT [98354] LOG:  redo done at 0/16993E0
+2018-10-21 13:15:36.696 PDT [98353] LOG:  database system is ready to accept connections
+2018-10-21 13:50:46.129 PDT [99142] FATAL:  database "status" does not exist
+2018-10-22 14:01:47.148 PDT [22876] LOG:  could not receive data from client: Connection reset by peer
+2018-10-22 14:09:04.605 PDT [23084] LOG:  could not receive data from client: Connection reset by peer
+2018-10-22 14:10:45.466 PDT [23141] FATAL:  lock file "postmaster.pid" already exists
+2018-10-22 14:10:45.466 PDT [23141] HINT:  Is another postmaster (PID 98353) running in data directory "/usr/local/var/postgres"?
+2018-10-22 14:10:54.649 PDT [23147] FATAL:  database "zachenney" does not exist
+2018-10-22 14:12:02.270 PDT [23172] ERROR:  syntax error at or near "-" at character 13
+2018-10-22 14:12:02.270 PDT [23172] STATEMENT:  TABLE active-games;
+2018-10-22 14:12:07.732 PDT [23172] ERROR:  syntax error at or near "TABLES" at character 1
+2018-10-22 14:12:07.732 PDT [23172] STATEMENT:  TABLES active-games;
+2018-10-22 14:12:27.403 PDT [23172] ERROR:  syntax error at or near "-" at character 13
+2018-10-22 14:12:27.403 PDT [23172] STATEMENT:  TABLE active-games
+	;
+2018-10-22 14:13:17.856 PDT [23205] ERROR:  syntax error at or near "-" at character 18
+2018-10-22 14:13:17.856 PDT [23205] STATEMENT:  DROP TABLE active-games
+	;
+2018-10-22 14:16:10.918 PDT [23294] ERROR:  relation "sequelizemeta" does not exist at character 7
+2018-10-22 14:16:10.918 PDT [23294] STATEMENT:  TABLE SequelizeMeta;
+2018-10-22 14:16:26.253 PDT [23294] ERROR:  syntax error at or near "TABLES" at character 1
+2018-10-22 14:16:26.253 PDT [23294] STATEMENT:  TABLES SequelizeMeta;
+2018-10-22 14:16:33.605 PDT [23294] ERROR:  relation "sequelizemeta" does not exist at character 7
+2018-10-22 14:16:33.605 PDT [23294] STATEMENT:  TABLE SequelizeMeta;
+2018-10-22 14:19:36.638 PDT [23294] ERROR:  column "active" does not exist at character 57
+2018-10-22 14:19:36.638 PDT [23294] STATEMENT:  delete from "SequelizeMeta" where name = 20181022203341-active-games.js
+	;
+2018-10-22 14:19:54.297 PDT [23294] ERROR:  column "20181022203341-active-games.js" does not exist at character 42
+2018-10-22 14:19:54.297 PDT [23294] STATEMENT:  delete from "SequelizeMeta" where name = "20181022203341-active-games.js"
+	;
+2018-10-22 14:20:19.723 PDT [23294] ERROR:  syntax error at or near "20181022203341" at character 12
+2018-10-22 14:20:19.723 PDT [23294] STATEMENT:  drop table 20181022203341-active-games.js
+	;
+2018-10-22 14:20:32.702 PDT [23294] ERROR:  table "20181022203341-active-games.js" does not exist
+2018-10-22 14:20:32.702 PDT [23294] STATEMENT:  drop table "20181022203341-active-games.js"
+	;
+2018-10-22 14:21:56.937 PDT [23294] ERROR:  column "id" does not exist at character 35
+2018-10-22 14:21:56.937 PDT [23294] STATEMENT:  delete from "SequelizeMeta" where id = 4;
+2018-10-22 14:22:15.671 PDT [23294] ERROR:  column "20181022203341-active-games.js" does not exist at character 42
+2018-10-22 14:22:15.671 PDT [23294] STATEMENT:  delete from "SequelizeMeta" where name = "20181022203341-active-games.js";
+2018-10-22 14:39:20.842 PDT [23836] ERROR:  column "createdAt" of relation "users" does not exist at character 33
+2018-10-22 14:39:20.842 PDT [23836] STATEMENT:  INSERT INTO "users" ("username","createdAt","password","wins","losses") VALUES ('user1',1540244360840,'pass',2,3),('user2',1540244360840,'pass',7,1);
+2018-10-22 14:39:47.911 PDT [23852] ERROR:  column "createdAt" of relation "users" does not exist at character 33
+2018-10-22 14:39:47.911 PDT [23852] STATEMENT:  INSERT INTO "users" ("username","createdAt","password","wins","losses") VALUES ('user1',1540244387910,'pass',2,3),('user2',1540244387910,'pass',7,1);
+2018-10-22 14:40:10.667 PDT [23864] ERROR:  column "createAt" is of type timestamp with time zone but expression is of type bigint at character 88
+2018-10-22 14:40:10.667 PDT [23864] HINT:  You will need to rewrite or cast the expression.
+2018-10-22 14:40:10.667 PDT [23864] STATEMENT:  INSERT INTO "users" ("username","createAt","password","wins","losses") VALUES ('user1',1540244410666,'pass',2,3),('user2',1540244410666,'pass',7,1);
+2018-10-22 14:41:06.430 PDT [23894] ERROR:  column "username" of relation "games" does not exist at character 22
+2018-10-22 14:41:06.430 PDT [23894] STATEMENT:  INSERT INTO "games" ("username","boardState","isNext","isWhite") VALUES ('game1',ARRAY[0,1,3,4,6,7],0,0),('game2',ARRAY[0,1,3,4,6,7],1,0);
+2018-10-22 14:41:41.427 PDT [23908] ERROR:  column "createAt" is of type timestamp with time zone but expression is of type bigint at character 88
+2018-10-22 14:41:41.427 PDT [23908] HINT:  You will need to rewrite or cast the expression.
+2018-10-22 14:41:41.427 PDT [23908] STATEMENT:  INSERT INTO "users" ("username","createAt","password","wins","losses") VALUES ('user1',1540244501426,'pass',2,3),('user2',1540244501426,'pass',7,1);
+2018-10-22 14:43:30.771 PDT [23940] ERROR:  syntax error at or near "-" at character 21
+2018-10-22 14:43:30.771 PDT [23940] STATEMENT:  select * from active-games;
+2018-10-22 14:48:50.570 PDT [23940] ERROR:  syntax error at or near "in" at character 8
+2018-10-22 14:48:50.570 PDT [23940] STATEMENT:  insert in "active-games" (userId, gameId, players) 
+	values (1, 1, (2,3));
+2018-10-22 14:49:18.865 PDT [23940] ERROR:  syntax error at or near "in" at character 8
+2018-10-22 14:49:18.865 PDT [23940] STATEMENT:  insert in "active-games" (userId, gameId, players) 
+	values (1, 1, {{2,3}});
+2018-10-22 14:49:26.105 PDT [23940] ERROR:  syntax error at or near "in" at character 8
+2018-10-22 14:49:26.105 PDT [23940] STATEMENT:  insert in "active-games" (userId, gameId, players) 
+	values (1, 1, {2,3});
+2018-10-22 14:49:39.182 PDT [23940] ERROR:  syntax error at or near "{" at character 69
+2018-10-22 14:49:39.182 PDT [23940] STATEMENT:  insert into "active-games" (userId, gameId, players) 
+	values (1, 1, {2,3});
+2018-10-22 14:49:45.750 PDT [23940] ERROR:  column "userid" of relation "active-games" does not exist at character 29
+2018-10-22 14:49:45.750 PDT [23940] STATEMENT:  insert into "active-games" (userId, gameId, players) 
+	values (1, 1, (2,3));
+2018-10-22 14:50:15.146 PDT [23940] ERROR:  syntax error at or near "gameId" at character 29
+2018-10-22 14:50:15.146 PDT [23940] STATEMENT:  insert into "active-games"  gameId, players) 
+	values (1, 1, (2,3));
+2018-10-22 14:50:24.190 PDT [23940] ERROR:  column "gameid" of relation "active-games" does not exist at character 29
+2018-10-22 14:50:24.190 PDT [23940] STATEMENT:  insert into "active-games" (gameId, players) 
+	values (1, 1, (2,3));
+2018-10-22 14:51:01.110 PDT [23940] ERROR:  column "gameid" of relation "active-games" does not exist at character 29
+2018-10-22 14:51:01.110 PDT [23940] STATEMENT:  insert into "active-games" (gameId, players) 
+	values (1, 1, (2,3));
+2018-10-22 14:53:35.167 PDT [24144] ERROR:  syntax error at or near "*" at character 12
+2018-10-22 14:53:35.167 PDT [24144] STATEMENT:  DROP TABLE *
+	;
+2018-10-22 14:54:40.973 PDT [24213] ERROR:  no schema has been selected to create in at character 28
+2018-10-22 14:54:40.973 PDT [24213] STATEMENT:  CREATE TABLE IF NOT EXISTS "SequelizeMeta" ("name" VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY ("name"));
+2018-10-22 14:56:29.894 PDT [24241] ERROR:  column "gameid" of relation "active-games" does not exist at character 29
+2018-10-22 14:56:29.894 PDT [24241] STATEMENT:  insert into "active-games" (gameId, userId) values (1, (1,2));
+2018-10-22 19:39:30.451 PDT [25575] ERROR:  column "gameid" of relation "active-games" does not exist at character 29
+2018-10-22 19:39:30.451 PDT [25575] STATEMENT:  insert into "active-games" (gameId, userId) values (1, (1,2));
+2018-10-22 19:41:21.096 PDT [25575] ERROR:  column "userId" is of type integer[] but expression is of type record at character 60
+2018-10-22 19:41:21.096 PDT [25575] HINT:  You will need to rewrite or cast the expression.
+2018-10-22 19:41:21.096 PDT [25575] STATEMENT:  insert into "active-games" ("gameId", "userId") values (1, (1,2));
+2018-10-22 19:41:34.774 PDT [25575] ERROR:  syntax error at or near "{" at character 60
+2018-10-22 19:41:34.774 PDT [25575] STATEMENT:  insert into "active-games" ("gameId", "userId") values (1, {1,2});
+2018-10-22 19:41:45.596 PDT [25575] ERROR:  column "userId" is of type integer[] but expression is of type record at character 60
+2018-10-22 19:41:45.596 PDT [25575] HINT:  You will need to rewrite or cast the expression.
+2018-10-22 19:41:45.596 PDT [25575] STATEMENT:  insert into "active-games" ("gameId", "userId") values (1, (1,2));
+2018-10-22 19:48:31.601 PDT [25575] ERROR:  syntax error at or near "{" at character 60
+2018-10-22 19:48:31.601 PDT [25575] STATEMENT:  insert into "active-games" ("gameId", "userId") values (1, {1,2});
+2018-11-06 16:14:35.494 PST [35132] ERROR:  relation "test_table" does not exist at character 13
+2018-11-06 16:14:35.494 PST [35132] STATEMENT:  INSERT INTO test_table ( "testString") VALUES ('Hello at $(Date.now()')
+2018-11-06 16:15:10.385 PST [35149] ERROR:  relation "test_table" does not exist at character 13
+2018-11-06 16:15:10.385 PST [35149] STATEMENT:  INSERT INTO test_table ( "testString") VALUES ('Hello at $(Date.now()')
