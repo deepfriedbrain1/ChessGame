@@ -1,0 +1,1 @@
+console.error("\n/Users/zachenney/Documents/School/Fall2018/CSC667/Term Project/repo/term-project-team-b/frontend/socket.js:5\nexport default { socket };\n^\nParseError: 'import' and 'export' may appear only with 'sourceType: module'");
