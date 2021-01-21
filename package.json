@@ -33,7 +33,7 @@
     "sequelize": "^4.39.0",
     "sequelize-cli": "^4.1.1",
     "sinon": "^7.2.2",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "socket.io-client": "^2.2.0",
     "watchify": "^3.11.0"
   },
